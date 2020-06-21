@@ -1,0 +1,45 @@
+{
+  "name": "inventory-mgmt-module-backend",
+  "version": "1.0.0",
+  "description": "Module for managing inventory built using Express, Typescript, Mongoose, Passport.js with Google Auth",
+  "main": "server.ts",
+  "scripts": {
+    "tst": "tsc",
+    "start": "npm run dev",
+    "dev": "ts-node-dev --respawn --transpileOnly -r dotenv/config ./src/server.ts",
+    "build": "tsc -p",
+    "health-check": "ts-node-dev ./src/utils/healthCheck.ts"
+  },
+  "author": "Lakshya Dev",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.19",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cookie-session": "^2.0.40",
+    "@types/express": "^4.17.6",
+    "@types/express-session": "^1.17.0",
+    "@types/lodash": "^4.14.155",
+    "@types/mongoose": "^5.7.27",
+    "@types/node": "^14.0.9",
+    "@types/passport": "^1.0.3",
+    "@types/passport-google-oauth20": "^2.0.3",
+    "@types/request": "^2.48.5",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.3"
+  },
+  "type": "module"
+}
