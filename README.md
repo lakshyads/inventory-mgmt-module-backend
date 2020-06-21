@@ -24,7 +24,7 @@
     * ```DB_NAME```
     * ```MONGO_URI```
     * ```COOKIE_KEY```
-    * ```PORT```
+    * ```PORT``` - DO NOT USE 3000 as it will be used by client app. ```By default, frontend will proxy api and auth requests to port 3001```.
   
 # Scripts
 
